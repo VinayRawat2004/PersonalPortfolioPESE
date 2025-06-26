@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Rawat - Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="space-theme">
+
+    <div id="starfield"></div>
+
+    <header id="header">
+        <nav class="container">
+            <a href="#hero" class="nav-logo">VR</a>
+            <ul id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#time-matrix" class="nav-link">Matrix</a></li>
+                <li><a href="#pd-journey" class="nav-link">Journey</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-sun"></i></button>
+                <button id="menu-toggle" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- NEW Spaceship Orb Element -->
+        <div id="spaceship-orb">
+            <div id="orb-core"></div>
+        </div>
+
+        <!-- Section: Hero -->
+        <section id="hero" class="full-screen-section">
+            <div class="hero-content">
+                <h1 class="animate-on-scroll">Vinay Rawat</h1>
+                <p class="animate-on-scroll" style="--delay: 0.2s;">Aspiring Software Developer</p>
+                <div class="hero-contact animate-on-scroll" style="--delay: 0.4s;">
+                    <a href="https://github.com/VinayRawat2004" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="mailto:vinay2004rawat@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:9410918932"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="hero-buttons animate-on-scroll" style="--delay: 0.6s;">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: About Me -->
+        <section id="about" class="container section">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-content animate-on-scroll" style="--delay: 0.2s;">
+                <p>A dedicated Computer Science and Engineering undergraduate at Graphic Era Hill University with a strong passion for practical technology, system-level thinking, and elegant problem-solving. My journey is driven by a 'learn by building' philosophy.</p>
+                <p>I am deeply interested in the fields of Machine Learning, Web Development, and low-level Operating Systems programming. I thrive on collaborating with peers to transform complex challenges into functional, impactful solutions.</p>
+            </div>
+        </section>
+
+        <!-- Section: Projects -->
+        <section id="projects" class="container section">
+            <h2 class="section-title animate-on-scroll">Projects</h2>
+            <div class="grid project-grid">
+                 <div class="project-card animate-on-scroll">
+                    <h3>Early Heart Disease Prediction Model</h3>
+                    <div class="project-tags"><span>Flask</span><span>Scikit-Learn</span><span>Pandas</span></div>
+                    <p>Used ML models (Logistic Regression, RF, SVM) with a recall of 86%, integrated into a web UI.</p>
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-card animate-on-scroll" style="--delay: 0.2s;">
+                    <h3>IMDB Sentiment Analysis using LSTM</h3>
+                    <div class="project-tags"><span>TensorFlow</span><span>Keras</span><span>Gradio</span></div>
+                    <p>Binary sentiment classification model achieving a 90% F1-Score, with a focus on data preprocessing.</p>
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-card animate-on-scroll" style="--delay: 0.4s;">
+                    <h3>Custom Shell in C (GTK GUI)</h3>
+                    <div class="project-tags"><span>C</span><span>GTK</span><span>Systems Programming</span></div>
+                    <p>Designed a cross-platform CLI shell for Windows/Linux with a GUI via GTK for real-time command execution.</p>
+                                       <div class="project-status completed">Completed</div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Time Management Matrix -->
+        <section id="time-matrix" class="container section">
+            <h2 class="section-title animate-on-scroll">Time Management Matrix</h2>
+            <div class="matrix-grid">
+                <div class="matrix-quadrant urgent-important animate-on-scroll">
+                    <h3>Urgent & Important</h3><p class="subtitle">Do First</p>
+                    <ul><li>Placement & internship prep</li><li>Deadline-based certification exams</li><li>Core subject skill review</li></ul>
+                </div>
+                <div class="matrix-quadrant not-urgent-important animate-on-scroll" style="--delay: 0.1s;">
+                    <h3>Not Urgent & Important</h3><p class="subtitle">Schedule</p>
+                    <ul><li>Update GitHub with documented projects</li><li>Learn DevOps basics (CI/CD)</li><li>Professional networking</li></ul>
+                </div>
+                <div class="matrix-quadrant urgent-not-important animate-on-scroll" style="--delay: 0.2s;">
+                    <h3>Urgent & Not Important</h3><p class="subtitle">Minimize/Batch</p>
+                    <ul><li>Routine emails & announcements</li><li>Non-critical peer queries</li><li>Minor code formatting tweaks</li></ul>
+                </div>
+                <div class="matrix-quadrant not-urgent-not-important animate-on-scroll" style="--delay: 0.3s;">
+                    <h3>Not Urgent & Not Important</h3><p class="subtitle">Eliminate</p>
+                    <ul><li>Endless social media scrolling</li><li>Jumping between tech stacks</li><li>Reworking solved code</li></ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section: Personality Development Journey -->
+        <section id="pd-journey" class="container section">
+            <h2 class="section-title animate-on-scroll">PESE Classes Highlights</h2>
+           <div class="timeline">
+    <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot"></div>
+        <i class="fas fa-lightbulb timeline-icon"></i>
+        <div class="timeline-content">
+            <h3>Session 1: Introduction</h3>
+            <p>Got an introduction to the subject and to ma'am. Ma'am introduced herself. Did a fun activity of translating Hindi song lyrics into English. Talked about why we hesitate to talk about ourselves. Discussed the importance of being energetic, disciplined, and using positive words while speaking.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item animate-on-scroll" style="--delay: 0.1s;">
+        <div class="timeline-dot"></div>
+        <i class="fas fa-bullseye timeline-icon"></i>
+        <div class="timeline-content">
+            <h3>Session 2: Skills, SMART Goals & CV Basics</h3>
+            <p>Learned about different types of skills and the SMART goal framework. SMART = Specific, Measurable, Achievable, Relevant, Time-bound. Practiced Time Jar activity to understand task prioritization. Learned about basic CV structure and sections. Weekly quote-learning task (3–5 quotes) was introduced.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item animate-on-scroll" style="--delay: 0.2s;">
+        <div class="timeline-dot"></div>
+        <i class="fas fa-spa timeline-icon"></i>
+        <div class="timeline-content">
+            <h3>Session 3: SWOT & Perspective</h3>
+            <p>Learned about SWOT (Strengths, Weaknesses, Opportunities, Threats). Discussed the importance of certifications. Did a perspective-building activity. Practiced short meditation to improve clarity and focus.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item animate-on-scroll" style="--delay: 0.3s;">
+        <div class="timeline-dot"></div>
+        <i class="fas fa-microphone-alt timeline-icon"></i>
+        <div class="timeline-content">
+            <h3>Session 4: Interview Flow & Self-Introduction</h3>
+            <p>Learned how interviews are structured and what to expect. Formed lab groups. Practiced how to introduce ourselves properly with real examples. Ma'am shared stories to explain concepts clearly.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item animate-on-scroll" style="--delay: 0.4s;">
+        <div class="timeline-dot"></div>
+        <i class="fas fa-user-edit timeline-icon"></i>
+        <div class="timeline-content">
+            <h3>Session 5: Roleplay & Extempore</h3>
+            <p>Participated in roleplay activities and practiced extempore speeches. Topics included empathy and space tourism. Ma'am gave tasks quickly and directly. The session was short and active.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item animate-on-scroll" style="--delay: 0.5s;">
+        <div class="timeline-dot"></div>
+        <i class="fas fa-users timeline-icon"></i>
+        <div class="timeline-content">
+            <h3>Session 6: Group Discussion & Animal Analogy</h3>
+            <p>Did GD on topics like “Is the US still a superpower?” and “Civic Sense in India.” Learned how to speak, listen, and cooperate in group discussions. Ma'am shared the story of the monk and mirror to teach self-awareness. 
+            <br><br><strong>Animal Analogy in GD:</strong><br>
+            🦁 <b>Lion</b> – Starts strong and leads the group<br>
+            🐘 <b>Elephant</b> – Wise, calm, and supportive<br>
+            🦊 <b>Fox</b> – Interrupts and tries to show off<br>
+            🦜 <b>Parrot</b> – Repeats what others say<br>
+            🐱 <b>Cat</b> – Quiet and avoids speaking<br>
+            <br>We learned it's best to be like a lion or a calm elephant in GDs.</p>
+        </div>
+    </div>
+
+
+    <div class="timeline-item animate-on-scroll" style="--delay: 0.6s;">
+        <div class="timeline-dot"></div>
+        <i class="fas fa-briefcase timeline-icon"></i>
+        <div class="timeline-content">
+            <h3>Session 7: Interview Practice</h3>
+            <p>Practiced answering common interview questions. Each student was asked to answer in front of the class. Ma’am guided us on how to give structured and confident answers with real examples.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item animate-on-scroll" style="--delay: 0.7s;">
+        <div class="timeline-dot"></div>
+        <i class="fas fa-comments timeline-icon"></i>
+        <div class="timeline-content">
+            <h3>Session 8: Behavioural Questions</h3>
+            <p>Focused on behavioural and situational questions used in interviews. Answered based on real-life experiences to show thinking, values, and problem-solving ability.</p>
+        </div>
+    </div>
+</div>
+
+        </section>
+
+        <!-- Section: Skills -->
+        <section id="skills" class="container section">
+            <h2 class="section-title animate-on-scroll">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll"><h3>Languages</h3><div class="skill-tags"><span>C</span><span>C++</span><span>Python</span><span>JavaScript</span><span>HTML</span><span>PHP</span><span>Shell Scripting</span></div></div>
+                <div class="skill-category animate-on-scroll" style="--delay: 0.2s;"><h3>Tools/Libraries</h3><div class="skill-tags"><span>Streamlit</span><span>Flask</span><span>Scikit-Learn</span><span>Pandas</span><span>Numpy</span><span>Gradio</span><span>GTK</span></div></div>
+                <div class="skill-category animate-on-scroll" style="--delay: 0.4s;"><h3>Technologies & Databases</h3><div class="skill-tags"><span>Web Development</span><span>Deep Learning</span><span>Networking</span><span>MySQL</span><span>Oracle</span></div></div>
+                <div class="skill-category animate-on-scroll" style="--delay: 0.6s;"><h3>Soft Skills</h3><div class="skill-tags"><span>Leadership</span><span>Communication</span><span>Critical Thinking</span><span>Problem-Solving</span></div></div>
+            </div>
+        </section>
+          <!-- Section: Motivational Quotes -->
+        <section id="quotes" class="container section">
+            <h2 class="section-title animate-on-scroll">Words That Guide Me</h2>
+            <div class="quote-card animate-on-scroll" style="--delay: 0.2s;">
+                <blockquote id="quote-text">Loading...</blockquote>
+                <cite id="quote-author"></cite>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 Vinay Rawat. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
